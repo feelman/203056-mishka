@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Главная: Мишка</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
@@ -20,16 +21,12 @@
               <a href="form.html">Вязание на заказ</a>
             </li>
           </ul>
-          <ul class="main-nav__user-items">
-            <li class="main-nav__search">
-              <div class="main-nav__icon  main-nav__icon--search"></div>
-              <a href="#">Поиск по сайту</a>
-            </li>
-             <li class="main-nav__cart">
-              <div class="main-nav__icon  main-nav__icon--cart"></div>
-              <a href="#">Корзина: пока пуста</a>
-            </li>
-          </ul>
+          <div class="search">
+            <a href="#">Поиск по сайту</a>
+          </div>
+          <div class="cart">
+            <a href="#">Корзина: пока пуста</a>
+          </div>
         </div>
       </nav>
     </header>
@@ -40,12 +37,12 @@
       <nav class="second-nav">
         <div class="second-nav__wrapper">
           <ul class="second-nav__items">
-            <li class="second-nav__item">
-              <a href="#">Предметы интерьера</a>
+            <li class="second-nav__item--first">
+              <a class="second-nav__item" href="#">Предметы интерьера</a>
               <div class="second-nav__icon  second-nav__icon--interior"></div>
             </li>
-            <li class="second-nav__item">
-              <a href="#">Детские игрушки</a>
+            <li class="second-nav__item--second">
+              <a class="second-nav__item" href="#">Детские игрушки</a>
               <div class="second-nav__icon  second-nav__icon--child"></div>
             </li>
           </ul>
