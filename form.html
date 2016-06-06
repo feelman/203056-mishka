@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Вязание на заказ: Мишка</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
@@ -20,16 +21,12 @@
               <a href="form.html">Вязание на заказ</a>
             </li>
           </ul>
-          <ul class="main-nav__user-items">
-            <li class="main-nav__search">
-              <div class="main-nav__icon  main-nav__icon--search"></div>
-              <a href="#">Поиск по сайту</a>
-            </li>
-             <li class="main-nav__cart">
-              <div class="main-nav__icon  main-nav__icon--cart"></div>
-              <a href="#">Корзина: пока пуста</a>
-            </li>
-          </ul>
+          <div class="search">
+            <a href="#">Поиск по сайту</a>
+          </div>
+          <div class="cart">
+            <a href="#">Корзина: пока пуста</a>
+          </div>
         </div>
       </nav>
     </header>
@@ -88,14 +85,12 @@
                 <h2 class="form__title">Тел</h2>
                 <div class="form__input-tel">
                   <input type="text" id="tel" name="tel" placeholder="+7 ХХХ ХХ ХХ">
-                  <div class="form__tel-icon"></div>
                 </div>
               </div>
               <div class="form__email">
                 <h2 class="form__title">E-mail</h2>
                 <div class="form__input-email">
                   <input type="text" id="email" name="email" placeholder="Ваш e-mail">
-                  <div class="form__email-icon"></div>
                 </div>
               </div>
               <div class="form__other">

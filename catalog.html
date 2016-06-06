@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог товаров: Мишка</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
@@ -20,16 +21,12 @@
               <a href="form.html">Вязание на заказ</a>
             </li>
           </ul>
-          <ul class="main-nav__user-items">
-            <li class="main-nav__search">
-              <div class="main-nav__icon  main-nav__icon--search"></div>
-              <a href="#">Поиск по сайту</a>
-            </li>
-             <li class="main-nav__cart">
-              <div class="main-nav__icon  main-nav__icon--cart"></div>
-              <a href="#">Корзина: пока пуста</a>
-            </li>
-          </ul>
+          <div class="search">
+            <a href="#">Поиск по сайту</a>
+          </div>
+          <div class="cart">
+            <a href="#">Корзина: пока пуста</a>
+          </div>
         </div>
       </nav>
     </header>
@@ -50,7 +47,7 @@
               </header>
               <footer class="catalog__item-footer">
                 <span class="catalog__item-price">1 200 руб.</span>
-                <a href="#more"><img src="http://placehold.it/150x100"></a>
+                <a class="catalog__item-cart" href="#more">Купить</a>
               </footer>
             </section>
             <section class="catalog__item">
@@ -65,7 +62,7 @@
               </header>
               <footer class="catalog__item-footer">
                 <span class="catalog__item-price">690 руб.</span>
-                <a href="#more"><img src="http://placehold.it/150x100"></a>
+                <a class="catalog__item-cart" href="#more">Купить</a>
               </footer>
             </section>
             <section class="catalog__item">
@@ -80,7 +77,7 @@
               </header>
               <footer class="catalog__item-footer">
                 <span class="catalog__item-price">1 500 руб.</span>
-                <a href="#more"><img src="http://placehold.it/150x100"></a>
+                <a class="catalog__item-cart" href="#more">Купить</a>
               </footer>
             </section>
           </div>
