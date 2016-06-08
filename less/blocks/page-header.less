@@ -1,3 +1,48 @@
 .page-header {
   background-color: @body-bg;
 }
+
+.page-header__wrapper {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.page-header__logo {
+  height: 80px;
+}
+
+.page-header__user-items,
+.page-header__user-items-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media @tablet-widths {
+  
+  .page-header__wrapper {
+    .container();
+    .clearfix();
+  }
+  
+  .page-header__logo {
+    float: left;
+    height: 88px;
+  }
+  
+  .page-header__user-items {
+    float: right;
+  }
+  
+}
+
+@media @desktop-widths {
+  
+  .page-header__logo {
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+    height: 88px;
+  }
+  
+}

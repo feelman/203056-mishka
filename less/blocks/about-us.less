@@ -5,3 +5,49 @@
   color: #000000;
   background-color: @body-bg;
 }
+
+.about-us__wrapper {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.about-us__title,
+.about-us__item {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+@media @tablet-widths {
+  
+  .about-us__wrapper {
+    .container();
+  }
+  
+  .about-us__title,
+  .about-us__item {
+    margin: 0;
+  }
+  
+  .about-us__items {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .about-us__item {
+    flex-basis: 334px;
+  }
+  
+}
+
+@media @desktop-widths {
+  
+  .about-us__title,
+  .about-us__items {
+    margin-left: 175px;
+  }
+  
+  .about-us__item {
+    flex-basis: 350px;
+  }
+  
+}
