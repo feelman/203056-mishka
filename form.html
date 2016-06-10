@@ -8,32 +8,43 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="page-header__wrapper">
-        <div class="page-header__logo">
-          <a href="/"><img src="http://placehold.it/100x50"></a>
-        </div>
-        <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">Открыть меню</button>
-          <ul class="main-nav__items">
-            <li class="main-nav__item">
-              <a href="catalog.html">Каталог товаров</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="form.html">Вязание на заказ</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="page-header__user-items">
-          <ul class="page-header__user-items-list">
-            <li class="search">
-              <a href="#">Поиск по сайту</a>
-            </li>
-            <li class="cart">
-              <a href="#">Корзина: пока пуста</a>
-            </li>
-          </ul>
-        </div>
+      <div class="page-header__logo">
+        <a href="/"><img src="img/logo-mobile.svg"></a>
       </div>
+      <nav class="page-header__main-nav  main-nav  main-nav--closed  main-nav--nojs">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <ul class="main-nav__items">
+          <li class="main-nav__item">
+            <a href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="form.html">Вязание на заказ</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="page-header__user-items  main-nav--closed  main-nav--nojs">
+        <ul class="page-header__user-items-list">
+          <li class="search">
+            <a href="#">Поиск по сайту</a>
+          </li>
+          <li class="cart">
+            <a href="#">Корзина: пока пуста</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-header__delivery-info">
+        <span>Бесплатная доставка по России</span>
+      </div>
+      <nav class="page-header__second-nav">
+        <ul class="page-header__second-nav-items">
+          <li class="page-header__second-nav-item">
+            <a href="#">Новые поступления</a>
+          </li>
+          <li class="page-header__second-nav-item">
+            <a href="#">Распродажа</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main>
       <div class="content">
@@ -139,5 +150,6 @@
         </section>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>

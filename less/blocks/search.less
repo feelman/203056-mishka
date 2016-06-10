@@ -1,3 +1,34 @@
+.search {
+  position: relative;
+}
+
+.search a {
+  display: block;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  padding-left: 75px;
+  font-family: "Verdana", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000000;
+  border-bottom: 1px solid #ececec;
+  text-align: left;
+}
+
+.search a::before {
+  content: "";
+  position: absolute;
+  top: 32px;
+  left: 35px;
+  width: 18px;
+  height: 18px;
+  background: url(../../img/icon-search.svg) no-repeat;
+  opacity: 0.2;
+}
+
 @media @tablet-widths {
   
   .search {
