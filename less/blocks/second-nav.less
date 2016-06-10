@@ -1,8 +1,23 @@
+.second-nav__wrapper {
+  width: 320px;
+  margin: 0 auto;
+}
+
 .second-nav__items,
 .second-nav__item {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.second-nav__item a {
+  display: block;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 30px;
+  padding-right: 30px;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .second-nav__item--first {
@@ -11,4 +26,26 @@
 
 .second-nav__item--second {
   background-color: #56c3b2;
+}
+
+@media @tablet-widths {
+  
+  .second-nav__wrapper {
+    .container();
+    .clearfix();
+  }
+  
+  .second-nav__item {
+    float: left;
+    width: 334px;
+  }
+  
+}
+
+@media @desktop-widths {
+  
+  .second-nav__item {
+    width: 525px;
+  }
+  
 }

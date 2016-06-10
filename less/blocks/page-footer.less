@@ -1,3 +1,31 @@
 .page-footer {
   background-color: #f1f1f1;
 }
+
+.page-footer__wrapper {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.page-footer__copyright {
+  display: flex;
+  justify-content: center;
+}
+
+@media @tablet-widths {
+  
+  .page-footer__wrapper {
+    .clearfix();
+    .container();
+  }
+  
+  .page-footer__social {
+    float: left;
+    margin-right: 60px;
+  }
+  
+  .page-footer__copyright {
+    float: left;
+  }
+  
+}

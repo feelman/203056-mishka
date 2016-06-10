@@ -5,3 +5,64 @@
   color: @body-color;
   background-color: @body-bg;
 }
+
+.form__wrapper {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.form--btn {
+  width: 260px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-bottom: 50px;
+  background-color: #ffffff;
+}
+
+@media @tablet-widths {
+  
+  .form__wrapper {
+    .container();
+  }
+  
+  .form__content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form__type,
+  .form__color,
+  .form__full-name,
+  .form__tel,
+  .form__email,
+  .form__other {
+    display: flex;
+  }
+  
+  .form__title {
+    flex-basis: 167px;
+    margin-top: 0;
+  }
+  
+  .form--btn {
+    margin: 0;
+  }
+  
+}
+
+@media @desktop-widths {
+  
+  .form__header-description {
+    margin-left: 225px;
+  }
+  
+  .form__title {
+    flex-basis: 175px;
+    margin-left: 50px;
+  }
+  
+  .form--btn {
+    margin-left: 225px;
+  }
+  
+}
