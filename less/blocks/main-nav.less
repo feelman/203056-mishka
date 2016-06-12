@@ -117,8 +117,21 @@
 
 @media @desktop-widths {
   
-  .main-nav {
-    
+  .main-nav__item {
+    margin-right: 28px;
+    padding-right: 37px;
+    border-right: 1px solid #ececec;
+    &:last-child {
+      margin-right: 0;
+      padding-right: 0;
+      border-right: none;
+    }
+  }
+  
+  .main-nav__item a {
+    margin-top: 30px;
+    margin-bottom: 24px;
+    font-size: 16px;
   }
   
 }

@@ -1,14 +1,12 @@
 .top-product {
+  .container-fluid();
+  margin-left: 30px;
+  margin-right: 30px;
   font-family: @body-font-family;
   font-size: @body-font-size; 
   line-height: 24px;
   color: @body-color;
   background-color: @body-bg;
-}
-
-.top-product__wrapper {
-  width: 320px;
-  margin: 0 auto;
 }
 
 .top-product__header {
@@ -24,9 +22,17 @@
   margin: 0;
 }
 
+.top-product__image img {
+  width: 260px;
+}
+
 .top-product__price {
   display: block;
-  text-align: center;
+  margin-left: 60px;
+  font-family: "Verdana", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 @media @tablet-widths {
