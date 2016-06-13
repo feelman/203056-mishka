@@ -1,5 +1,6 @@
 .about-us {
   .container-fluid();
+  margin-bottom: 60px;
   font-family: "Verdana", sans-serif;
   font-weight: bold;
   font-size: 16px;
@@ -59,11 +60,11 @@
   background: url(../../img/icon-feature-6.svg) no-repeat;
 }
 
-.about-us__item-description {
-  
-}
-
 @media @tablet-widths {
+  
+  .about-us {
+    margin-bottom: 120px;
+  }
   
   .about-us__title,
   .about-us__item {
@@ -85,15 +86,12 @@
   }
   
   .about-us__items {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 480px;
+    .clearfix();
   }
   
-  .about-us__item {
-    width: 49%;
-    margin-right: 25px;
+  .about-us__items-column {
+    float: left;
+    width: 50%;
   }
   
 }
@@ -110,12 +108,8 @@
     line-height: 57px;
   }
   
-  .about-us__items {
-    
-  }
-  
-  .about-us__item {
-   
+  .about-us__items-column {
+    width: 40%; 
   }
   
 }
