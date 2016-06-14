@@ -1,5 +1,8 @@
 .catalog {
+  .container-fluid();
   margin-bottom: 53px;
+  padding-left: 30px;
+  padding-right: 30px;
   font-family: @body-font-family;
   font-size: @body-font-size;
   line-height: 30px;
@@ -7,20 +10,66 @@
   background-color: @body-bg;
 }
 
-.catalog__wrapper {
-  width: 320px;
-  margin: 0 auto;
+.catalog__item {
+  margin-top: 30px;
+  border: 1px solid #ededed;
 }
 
-.catalog__item-header,
+.catalog__item-image {
+  margin-bottom: 10px;
+}
+
+.catalog__item-info {
+  padding-left: 28px;
+  padding-right: 28px;
+}
+
+.catalog__item-header {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ededed;
+}
+
+.catalog__item-title,
+.catalog__item-description {
+  margin: 0;
+}
+
+.catalog__item-title a {
+  font-family: "Verdana", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  text-decoration: none;
+}
+
 .catalog__item-footer {
-  margin-left: 55px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.catalog__item-price {
+  font-family: "Verdana", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.catalog__item-cart {
+  width: 20px;
+  height: 19px;
+  background: url(../../img/icon-cart.svg) no-repeat;
+  font-size: 0;
+  opacity: 0.2;
 }
 
 @media @tablet-widths {
   
-  .catalog__wrapper {
-    .container();
+  .catalog {
+    margin-bottom: 50px;
   }
   
   .catalog__item {
@@ -32,19 +81,58 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 330px;
+    padding-top: 30px;
+    padding-right: 0;
+  }
+  
+  .catalog__item-header {
+    padding-bottom: 180px;
+  }
+  
+  .catalog__item-title a {
+    font-size: 18px;
+  }
+  
+  .catalog__item-description {
+    font-size: 15px;
+    line-height: 30px;
+  }
+  
+  .catalog__item-price {
+    font-size: 16px;
+    line-height: 24px;
   }
   
 }
 
 @media @desktop-widths {
   
-  .catalog__wrapper {
+  .catalog {
     display: flex;
-    flex-direction: row;
+    justify-content: flex-start;
   }
   
   .catalog__item {
+    width: 316px;
+    margin-right: 51px;
     flex-direction: column;
+  }
+  
+  .catalog__item:last-child {
+    margin-right: 0;
+  }
+  
+  .catalog__item-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 240px;
+    padding-top: 0;
+  }
+  
+  .catalog__item-header {
+    padding-bottom: 0;
   }
   
 }
