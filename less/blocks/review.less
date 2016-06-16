@@ -1,4 +1,8 @@
 .review {
+  .container-fluid();
+  margin-bottom: 40px;
+  margin-left: 30px;
+  margin-right: 30px;
   font-family: @body-font-family;
   font-size: @body-font-size;
   line-height: 30px;
@@ -6,16 +10,18 @@
   background-color: @body-bg;
 }
 
-.review__wrapper {
-  width: 320px;
-  margin: 0 auto;
+.review__title {
+  font-family: "Verdana", sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: #000000;
 }
 
-.review__title,
-.review__item,
-.review__pagination {
-  margin-left: 30px;
-  margin-right: 30px; 
+.review__author {
+  display: block;
+  font-weight: bold;
+  color: #000000;
 }
 
 .review__pagination {
@@ -27,15 +33,24 @@
 .review__pagination-prev,
 .review__pagination-next {
   float: left;
-  width: 130px;
-  padding: 10px 40px;
+  width: 50%;
+  padding: 25px 40px;
+  cursor: pointer;
+  border: 1px solid #ececec;
+}
+
+.review__pagination-prev {
+  background: url(../img/icon-left-arrow.svg) no-repeat 50% 50%;
+}
+
+.review__pagination-next {
+  background: url(../img/icon-right-arrow.svg) no-repeat 50% 50%;
 }
 
 @media @tablet-widths {
   
-  .review__wrapper {
+  .review {
     position: relative;
-    .container();
   }
   
   .review__title,
@@ -47,6 +62,13 @@
   .review__title {
     margin-top: 80px;
     margin-bottom: 60px;
+    font-size: 40px;
+    line-height: 50px;
+  }
+  
+  .review__description {
+    font-size: 16px;
+    line-height: 30px;
   }
   
   .review__author-tag {
@@ -58,8 +80,8 @@
     right: 0;
     top: 0;
     width: 85px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     padding-left: 45px;
     padding-right: 45px;
   }
@@ -67,12 +89,22 @@
   .review__pagination {
     position: absolute;
     right: 0;
-    bottom: 20px;
+    bottom: 0px;
+  }
+  
+  .review__pagination-prev,
+  .review__pagination-next {
+    border: none;
   }
   
 }
 
 @media @desktop-widths {
+  
+  .review__title {
+    font-size: 50px;
+    line-height: 57px;
+  }
   
   .review__title,
   .review__item {

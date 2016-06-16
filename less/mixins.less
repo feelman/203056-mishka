@@ -19,3 +19,18 @@
     clear: both;
   }
 }
+
+.container-fluid() {
+  width: auto;
+
+  @media @tablet-widths {
+    width: 87%;
+    max-width: 1050px;
+    margin: 0 auto;
+  }
+  
+  @media @desktop-widths {
+    width: 92%;
+  }
+
+}

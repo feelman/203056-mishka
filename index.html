@@ -8,83 +8,90 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="page-header__wrapper">
-        <div class="page-header__logo">
-          <img src="http://placehold.it/100x50">
-        </div>
-        <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">Открыть меню</button>
-          <ul class="main-nav__items">
-            <li class="main-nav__item">
-              <a href="catalog.html">Каталог товаров</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="form.html">Вязание на заказ</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="page-header__user-items">
-          <ul class="page-header__user-items-list">
-            <li class="search">
-              <a href="#">Поиск по сайту</a>
-            </li>
-            <li class="cart">
-              <a href="#">Корзина: пока пуста</a>
-            </li>
-          </ul>
-        </div>
+      <div class="page-header__logo">
+        <img src="img/logo-mobile.svg">
       </div>
+      <nav class="page-header__main-nav  main-nav  main-nav--closed  main-nav--nojs">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <ul class="main-nav__items">
+          <li class="main-nav__item">
+            <a href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="form.html">Вязание на заказ</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="page-header__user-items  main-nav--closed  main-nav--nojs">
+        <ul class="page-header__user-items-list">
+          <li class="search">
+            <a href="#">Поиск по сайту</a>
+          </li>
+          <li class="cart">
+            <a href="#">Корзина: пока пуста</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-header__delivery-info">
+        <span>Бесплатная доставка по России</span>
+      </div>
+      <nav class="page-header__second-nav">
+        <ul class="page-header__second-nav-items">
+          <li class="page-header__second-nav-item">
+            <a href="#">Новые поступления</a>
+          </li>
+          <li class="page-header__second-nav-item">
+            <a href="#">Распродажа</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main>
       <div class="top-image">
         <h1 class="top-image__title">Милые штуки ручной работы для дома</h1>
       </div>
-      <nav class="second-nav">
-        <div class="second-nav__wrapper">
-          <ul class="second-nav__items">
-            <li class="second-nav__item  second-nav__item--first">
-              <a href="#">Предметы интерьера</a>
-              <div class="second-nav__icon  second-nav__icon--interior"></div>
-            </li>
-            <li class="second-nav__item  second-nav__item--second">
-              <a href="#">Детские игрушки</a>
-              <div class="second-nav__icon  second-nav__icon--child"></div>
-            </li>
-          </ul>
-        </div>
+      <nav class="second-nav"> 
+        <ul class="second-nav__items">
+          <li class="second-nav__item  second-nav__item--first">
+            <a href="#">Предметы <br>интерьера</a>
+            <div class="second-nav__icon  second-nav__icon--interior"></div>
+          </li>
+          <li class="second-nav__item  second-nav__item--second">
+            <a href="#">Детские <br>игрушки</a>
+            <div class="second-nav__icon  second-nav__icon--child"></div>
+          </li>
+        </ul>
       </nav>
       <section class="top-product">
-        <div class="top-product__wrapper">
-          <header class="top-product__header">
-            <h2 class="top-product__title">Вязаные корзинки</h2>
-            <span class="top-product__week">Товар недели</span>
-          </header>
-          <p class="top-product__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-          <table class="top-product__data">
-            <tr>
-              <td>Цвет:</td>
-              <td>«Тиффани»/серый</td>
-            </tr>
-            <tr>
-              <td>Диаметр:</td>
-              <td>25 см</td>
-            </tr>
-            <tr>
-              <td>Высота:</td>
-              <td>15 см</td>
-            </tr>
-          </table>
-          <figure class="top-product__image">
-            <img src="http://placehold.it/250x100">
-          </figure>
-          <span class="top-product__price">Цена: 990 руб.</span>
-          <a class="btn btn--top-product" href="#">Заказать</a>
+        <header class="top-product__header">
+          <h2 class="top-product__title">Вязаные корзинки</h2>
+          <span class="top-product__week">Товар недели</span>
+        </header>
+        <p class="top-product__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+        <table class="top-product__data">
+          <tr>
+            <td>Цвет:</td>
+            <td>«Тиффани»/серый</td>
+          </tr>
+          <tr>
+            <td>Диаметр:</td>
+            <td>25 см</td>
+          </tr>
+          <tr>
+            <td>Высота:</td>
+            <td>15 см</td>
+          </tr>
+        </table>
+        <div class="top-product__image">
+          <img src="http://placehold.it/260x100">
         </div>
+        <span class="top-product__price">Цена: 990 руб.</span>
+        <a class="btn btn--top-product" href="#">Заказать</a>
       </section>
       <section class="about-us">
-        <div class="about-us__wrapper">
-          <h3 class="about-us__title">Коротко о нас:</h3>
-          <div class="about-us__items">
+        <h3 class="about-us__title">Коротко о нас:</h3>
+        <div class="about-us__items">
+          <div class="about-us__items-column">
             <div class="about-us__item">
               <div class="about-us__icon  about-us__icon--eco"></div>
               <p class="about-us__item-description">Экологически чистые материалы</p>
@@ -97,6 +104,8 @@
               <div class="about-us__icon  about-us__icon--like"></div>
               <p class="about-us__item-description">Увеличивает лайки на фотографиях</p>
             </div>
+          </div>
+          <div class="about-us__items-column">
             <div class="about-us__item">
               <div class="about-us__icon  about-us__icon--love"></div>
               <p class="about-us__item-description">Связано вручную с любовью и умилением</p>
@@ -113,38 +122,35 @@
         </div>
       </section>
       <section class="review">
-        <div class="review__wrapper">
-          <h3 class="review__title">Отзывы</h3>
-          <div class="review__item">
-            <p class="review__description">Я молодая мама, но все равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке и мои фотографии сразу стали более стильнее, а также набирают больше лайков!</p>
-            <span class="review__author">Анастасия Красильникова</span>
-            <span class="review__author-tag">@misssssiskras</span>
-          </div>
-          <div class="review__pagination">
-            <button class="review__pagination-prev" type="button"></button>
-            <button class="review__pagination-next" type="button"></button>
-          </div>
-          <a class="btn review--btn" href="#">Написать</a>
+        <h3 class="review__title">Отзывы</h3>
+        <div class="review__item">
+          <p class="review__description">Я молодая мама, но все равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке и мои фотографии сразу стали более стильнее, а также набирают больше лайков!</p>
+          <span class="review__author">Анастасия Красильникова</span>
+          <span class="review__author-tag">@misssssiskras</span>
         </div>
+        <div class="review__pagination">
+          <button class="review__pagination-prev" type="button"></button>
+          <button class="review__pagination-next" type="button"></button>
+        </div>
+        <a class="btn review--btn" href="#">Написать</a>
       </section>
       <section class="contacts">
-        <div class="contacts__wrapper">
-          <h3 class="contact__title">Контакты</h3>
-          <div class="contacts__email">
-            <span class="contacts__email-title">e-mail:</span>
-            <p class="contacts__email-data">info@mimimishkashop.ru</p>
-          </div>
-          <div class="contacts__adress">
-            <span class="contacts__adress-title">адрес:</span>
-            <p class="contacts__adress-data">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</p>
-          </div>
-          <div class="contacts__map"><img src="http://placehold.it/320x400"></div>
-          <a class="btn contacts--btn" href="#">Напишите нам</a>
+        <h3 class="contact__title">Контакты</h3>
+        <div class="contacts__email">
+          <span class="contacts__email-title">e-mail:</span>
+          <p class="contacts__email-data">info@mimimishkashop.ru</p>
         </div>
+        <div class="contacts__adress">
+          <span class="contacts__adress-title">адрес:</span>
+          <p class="contacts__adress-data">г. Санкт-Петербург,<br> ул. Большая Конюшенная, д. 19/8, офис 101</p>
+        </div>
+        <div class="contacts__map"><img src="http://placehold.it/320x457"></div>
+        <a class="btn contacts--btn" href="#">Напишите нам</a>
       </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
+        <div class="page-footer__logo"><img src="img/logo-htmlacademy.svg" width="102px" height="34px"></div>
         <section class="page-footer__social">
           <ul class="social-links">
             <li class="social-link  social-link--instagram">
@@ -160,9 +166,10 @@
         </section>
         <section class="page-footer__copyright">
           <span class="page-footer__copyright-title">Разработано</span>
-          <div class="page-footer__copyright-image"><img src="http://placehold.it/50x50"></div>
+          <div class="page-footer__copyright-image"><img src="img/htmlacademy.svg" width="32px" height="37px"></div>
         </section>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>

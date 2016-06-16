@@ -2,12 +2,13 @@
   background-color: @body-bg;
 }
 
-.page-header__wrapper {
-  width: 320px;
-  margin: 0 auto;
+.page-header__logo {
+  height: 80px;
+  text-align: center;
 }
 
-.page-header__logo {
+.page-header__logo img {
+  width: 86px;
   height: 80px;
 }
 
@@ -18,20 +19,47 @@
   list-style: none;
 }
 
+.page-header__delivery-info,
+.page-header__second-nav {
+  display: none;
+}
+
 @media @tablet-widths {
   
-  .page-header__wrapper {
-    .container();
-    .clearfix();
+  .page-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .container-fluid();
+  }
+  
+  .page-header__main-nav {
+    flex-basis: 50%;
+    order: 1;
+    text-align: left;
   }
   
   .page-header__logo {
-    float: left;
+    flex-basis: 20%;
     height: 88px;
+    text-align: left;
   }
   
   .page-header__user-items {
-    float: right;
+    flex-basis: 80%;
+    text-align: right;
+  }
+  
+  .page-header__delivery-info {
+    display: block;
+    flex-basis: 50%;
+    order: 2;
+    text-align: right;
+    font-family: "Verdana regular", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: #444444;
   }
   
 }
@@ -39,10 +67,53 @@
 @media @desktop-widths {
   
   .page-header__logo {
-    position: absolute;
-    left: 50%;
-    margin-left: -50px;
-    height: 88px;
+    flex-basis: 20%;
+    order: 0;
+  }
+  
+  .page-header__main-nav {
+    flex-basis: 40%;
+    order: -1;
+  }
+  
+  .page-header__user-items {
+    flex-basis: 40%;
+    flex-basis: 1;
+  }
+  
+  .page-header__second-nav {
+    display: block;
+    flex-basis: 50%;
+    order: 2;
+  }
+  
+  .page-header__second-nav-items {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .page-header__second-nav-item {
+    display: inline-block;
+    margin-right: 60px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  
+  .page-header__second-nav-item a {
+    font-family: "Verdana", sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000000;
+    text-align: left;
+  }
+  
+  .page-header__delivery-info {
+    order: 3;
   }
   
 }

@@ -8,57 +8,74 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="page-header__wrapper">
-        <div class="page-header__logo">
-          <a href="/"><img src="http://placehold.it/100x50"></a>
-        </div>
-        <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">Открыть меню</button>
-          <ul class="main-nav__items">
-            <li class="main-nav__item">
-              <a href="catalog.html">Каталог товаров</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="form.html">Вязание на заказ</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="page-header__user-items">
-          <ul class="page-header__user-items-list">
-            <li class="search">
-              <a href="#">Поиск по сайту</a>
-            </li>
-            <li class="cart">
-              <a href="#">Корзина: пока пуста</a>
-            </li>
-          </ul>
-        </div>
+      <div class="page-header__logo">
+        <a href="/"><img src="img/logo-mobile.svg"></a>
       </div>
+      <nav class="page-header__main-nav  main-nav  main-nav--closed  main-nav--nojs">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <ul class="main-nav__items">
+          <li class="main-nav__item">
+            <a href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="form.html">Вязание на заказ</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="page-header__user-items  main-nav--closed  main-nav--nojs">
+        <ul class="page-header__user-items-list">
+          <li class="search">
+            <a href="#">Поиск по сайту</a>
+          </li>
+          <li class="cart">
+            <a href="#">Корзина: пока пуста</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-header__delivery-info">
+        <span>Бесплатная доставка по России</span>
+      </div>
+      <nav class="page-header__second-nav">
+        <ul class="page-header__second-nav-items">
+          <li class="page-header__second-nav-item">
+            <a href="#">Новые поступления</a>
+          </li>
+          <li class="page-header__second-nav-item">
+            <a href="#">Распродажа</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main>
       <div class="content">
         <h1 class="content__title">Вязание на заказ</h1>
         <section class="form">
-          <div class="form__wrapper">
-            <header class="form__header">
+          <header class="form__header">
+            <div class="form__wrapper">
               <p class="form__header-description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа, и мы свяжемся с вами, чтобы уточнить детали.</p>
-            </header>
-            <form action="#">
-              <div class="form__content">
-                <div class="form__type">
+            </div>
+          </header>
+          <form action="#">
+            <div class="form__content">
+              <div class="form__type">
+                <div class="form__wrapper">
                   <h2 class="form__title">Тип</h2>
                   <div class="form__input-items">
                     <div class="form__input-type">
-                      <input type="radio" id="type-interior" name="type" checked><label for="type-interior">Аксессуар для интерьера</label>
+                      <input type="radio" id="type-interior" name="type" checked>
+                      <label for="type-interior">Аксессуар для интерьера</label>
                     </div>
                     <div class="form__input-type">
-                      <input type="radio" id="type-child" name="type"><label for="type-child">Детская игрушка</label>
+                      <input type="radio" id="type-child" name="type">
+                      <label for="type-child">Детская игрушка</label>
                     </div>
                   </div>
                 </div>
-                <div class="form__color">
-                  <h2 class="form__title">Цвет</h2>
-                  <div class="form__input-items">
+              </div>
+              <div class="form__color">
+                <div class="form__wrapper">
+                  <h2 class="form__title  form__title--color">Цвет</h2>
+                  <div class="form__input-items  form__input-items--color">
                     <div class="form__input-color">
                       <input type="checkbox" id="white" name="color" checked><label for="white">Белый</label>
                     </div>
@@ -79,7 +96,9 @@
                     </div>
                   </div>
                 </div>
-                <div class="form__full-name">
+              </div>
+              <div class="form__full-name">
+                <div class="form__wrapper">
                   <h2 class="form__title">ФИО</h2>
                   <div class="form__input-items">
                     <div class="form__input-full-name">
@@ -93,33 +112,45 @@
                     </div>
                   </div>
                 </div>
-                <div class="form__tel">
+              </div>
+              <div class="form__tel">
+                <div class="form__wrapper">
                   <h2 class="form__title">Тел</h2>
                   <div class="form__input-tel">
                     <input type="text" id="tel" name="tel" placeholder="+7 ХХХ ХХ ХХ">
                   </div>
                 </div>
-                <div class="form__email">
-                  <h2 class="form__title">E-mail</h2>
+              </div>
+              <div class="form__email">
+                <div class="form__wrapper">
+                  <h2 class="form__title  form__title--email">E-mail</h2>
                   <div class="form__input-email">
                     <input type="text" id="email" name="email" placeholder="Ваш e-mail">
                   </div>
                 </div>
-                <div class="form__other">
+              </div>
+              <div class="form__other">
+                <div class="form__wrapper">
                   <h2 class="form__title">Доп</h2>
                   <div class="form__input-other">
                     <textarea id="other" name="other" placeholder="Опишите все ваши пожелания к заказу"></textarea>
                   </div>
                 </div>
-                <input class="btn form--btn" type="submit" value="Отправить заказ">
               </div>
-            </form>
-          </div>
+              <div class="form__btn">
+                <input class="btn form--btn" type="submit" value="Отправить заказ">
+                <div class="form__note">
+                  <span>Все поля являются обязательными</span>
+                </div>
+              </div>
+            </div>
+          </form>
         </section>
       </div>
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
+        <div class="page-footer__logo"><img src="img/logo-htmlacademy.svg" width="102px" height="34px"></div>
         <section class="page-footer__social">
           <ul class="social-links">
             <li class="social-link  social-link--instagram">
@@ -135,9 +166,10 @@
         </section>
         <section class="page-footer__copyright">
           <span class="page-footer__copyright-title">Разработано</span>
-          <div class="page-footer__copyright-image"><img src="http://placehold.it/50x50"></div>
+          <div class="page-footer__copyright-image"><img src="img/htmlacademy.svg" width="32px" height="37px"></div>
         </section>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
