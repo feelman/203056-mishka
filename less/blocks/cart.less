@@ -15,17 +15,35 @@
   text-decoration: none;
   color: #000000;
   text-align: left;
-}
-
-.cart a::before {
-  content: "";
-  position: absolute;
-  top: 30px;
-  left: 35px;
-  width: 21px;
-  height: 19px;
-  background: url(../img/icon-cart.svg) no-repeat;
-  opacity: 0.2;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 35px;
+    width: 21px;
+    height: 19px;
+    background: url(../img/icon-cart.svg) no-repeat;
+    opacity: 0.2;
+  }
+  
+  &:hover {
+    color: #8d8d8d;
+  }
+  
+  &:hover::before {
+    background: url(../img/icon-cart-hover.svg) no-repeat;
+    opacity: 1;
+  }
+  
+  &:active {
+    color: #cacaca;
+  }
+  
+  &:active::before {
+    opacity: 0.3;
+  }
+  
 }
 
 @media @tablet-widths {

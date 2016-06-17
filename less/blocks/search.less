@@ -16,17 +16,35 @@
   color: #000000;
   border-bottom: 1px solid #ececec;
   text-align: left;
-}
-
-.search a::before {
-  content: "";
-  position: absolute;
-  top: 32px;
-  left: 35px;
-  width: 18px;
-  height: 18px;
-  background: url(../img/icon-search.svg) no-repeat;
-  opacity: 0.2;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 32px;
+    left: 35px;
+    width: 18px;
+    height: 18px;
+    background: url(../img/icon-search.svg) no-repeat;
+    opacity: 0.2;
+  }
+  
+  &:hover {
+    color: #8d8d8d;
+  }
+  
+  &:hover::before {
+    background: url(../img/icon-search-hover.svg) no-repeat;
+    opacity: 1;
+  }
+  
+  &:active {
+    color: #cacaca;
+  }
+  
+  &:active::before {
+    opacity: 0.3;
+  }
+  
 }
 
 @media @tablet-widths {
