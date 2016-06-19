@@ -65,14 +65,39 @@
   }
   
   .second-nav__item a {
+    padding-bottom: 45px;
     font-size: 20px;
     line-height: 30px;
+    background: url(../img/bg-zigzag-fill.svg) no-repeat 50% 100%;
+    background-size: auto 24px;
   }
   
 }
 
 @media @desktop-widths {
   
+  .second-nav {
+    margin-bottom: 110px;
+  }
   
+  .second-nav__item a {
+    padding-bottom: 50px;
+    background-position: 0% 100%;
+    background-size: auto;
+    
+    &:hover {
+      padding-top: 20px;
+      padding-bottom: 55px;
+    }
+    
+    &:active {
+      opacity: 0.3;
+    }
+    
+    &:hover::after {
+      top: 15px;
+    }
+    
+  }
   
 }
