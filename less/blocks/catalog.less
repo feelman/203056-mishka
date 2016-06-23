@@ -1,6 +1,6 @@
 .catalog {
   .container-fluid();
-  margin-bottom: 53px;
+  margin-bottom: 30px;
   padding-left: 30px;
   padding-right: 30px;
   font-family: @body-font-family;
@@ -17,6 +17,11 @@
 
 .catalog__item-image {
   margin-bottom: 10px;
+}
+
+.catalog__item-image img {
+  width: 258px;
+  height: 195px;
 }
 
 .catalog__item-info {
@@ -41,6 +46,14 @@
   line-height: 24px;
   color: #000000;
   text-decoration: none;
+  
+  &:hover {
+    opacity: 0.6;
+  }
+  
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .catalog__item-footer {
@@ -56,14 +69,30 @@
   font-size: 14px;
   line-height: 24px;
   color: #000000;
+  
+  &:hover {
+    opacity: 0.6;
+  }
+  
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .catalog__item-cart {
   width: 20px;
   height: 19px;
-  background: url(../img/icon-cart.svg) no-repeat;
-  font-size: 0;
   opacity: 0.2;
+  
+  &:hover {
+    fill: #63d1bb;
+    opacity: 1;
+  }
+  
+  &:active {
+    fill: #63d1bb;
+    opacity: 0.2;
+  }
 }
 
 @media @tablet-widths {
@@ -75,6 +104,16 @@
   .catalog__item {
     display: flex;
     flex-direction: row;
+    height: 334px;
+  }
+  
+  .catalog__item-image {
+    margin-bottom: 0;
+  }
+  
+  .catalog__item-image img {
+    width: 334px;
+    height: 334px;
   }
   
   .catalog__item-info {
@@ -87,7 +126,7 @@
   }
   
   .catalog__item-header {
-    padding-bottom: 180px;
+    border-bottom: none;
   }
   
   .catalog__item-title a {
@@ -97,6 +136,11 @@
   .catalog__item-description {
     font-size: 15px;
     line-height: 30px;
+  }
+  
+  .catalog__item-footer {
+    margin-right: 30px;
+    border-top: 1px solid #ededed;
   }
   
   .catalog__item-price {
@@ -115,8 +159,19 @@
   
   .catalog__item {
     width: 316px;
+    height: 660px;
     margin-right: 51px;
     flex-direction: column;
+    border: none;
+  }
+  
+  .catalog__item-image {
+    height: 462px;
+  }
+  
+  .catalog__item-image img {
+    width: 316px;
+    height: 462px;
   }
   
   .catalog__item:last-child {
@@ -127,13 +182,29 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding-top: 10px;
+    padding-right: 46px;
     width: 240px;
-    padding-top: 0;
+    border: 1px solid #ededed;
+    border-top: none;
+    
+    &:hover {
+      box-shadow: 0 6px 10px #ececec;
+    }
+    
+    &:active {
+      box-shadow: 0 3px 5px #ececec;
+    }
   }
   
   .catalog__item-header {
     min-height: 100px;
     padding-bottom: 0;
+  }
+  
+  .catalog__item-footer {
+    width: 260px;
+    margin-right: 0;
   }
   
 }
