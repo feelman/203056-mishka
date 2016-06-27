@@ -98,8 +98,8 @@ module.exports = function(grunt) {
       server: {
         bsFiles: {
           src: [
-            "build/*.html",
-            "build/css/*.css"
+            "*.html",
+            "css/*.css"
           ]
         },
         options: {
