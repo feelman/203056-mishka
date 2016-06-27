@@ -3,6 +3,7 @@ var secondNav = document.querySelector('.page-header__user-items');
 var navToggle = document.querySelector('.main-nav__toggle');
 
 navMain.classList.remove('main-nav--nojs');
+secondNav.classList.remove('main-nav--nojs');
 
 navToggle.addEventListener('click', function() {
   if (navMain.classList.contains('main-nav--closed')) {

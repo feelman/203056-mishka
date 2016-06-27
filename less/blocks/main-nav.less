@@ -14,7 +14,7 @@
   padding-top: 28px;
   padding-bottom: 28px;
   padding-left: 75px;
-  font-family: "Verdana", sans-serif;
+  font-family: "Verdana", "Geneva", sans-serif;
   font-style: normal;
   font-size: 16px;
   line-height: 24px;
@@ -93,6 +93,15 @@
   .main-nav--closed .main-nav__items,
   .main-nav--closed .page-header__user-items-list {
     display: none;
+  }
+  
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__items,
+  .main-nav--nojs .page-header__user-items-list {
+    display: block;
   } 
   
 }
