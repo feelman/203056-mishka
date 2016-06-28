@@ -17,6 +17,13 @@ module.exports = function(grunt) {
           ],
           dest: "build"
         }]
+      },
+      html: {
+        files: [{
+          expand: true,
+          src: ["*.html"],
+          dest: "build"
+        }]
       }
     },
     
@@ -113,9 +120,13 @@ module.exports = function(grunt) {
     },
 
     watch: {
+      html: {
+        files: ["*.html"],
+        tasks: ["copy:html"]
+      },
       style: {
         files: ["less/**/*.less"],
-        tasks: ["less", "postcss"],
+        tasks: ["less", "postcss", "csso"],
         options: {
           spawn: false
         }

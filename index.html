@@ -259,7 +259,7 @@
         </picture>
       </div>
       <nav class="page-header__main-nav  main-nav  main-nav--closed  main-nav--nojs">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <button class="main-nav__toggle" type="button">Открыть меню</button> <!-- Делал по примеру ДЕМО , пруф https://up.htmlacademy.ru/adaptive/7/resources/465 -->
         <ul class="main-nav__items">
           <li class="main-nav__item">
             <a href="catalog.html">Каталог товаров</a>
@@ -279,9 +279,7 @@
           </li>
         </ul>
       </div>
-      <div class="page-header__delivery-info">
-        <span>Бесплатная доставка по России</span>
-      </div>
+      <div class="page-header__delivery-info">Бесплатная доставка по России</div>
       <nav class="page-header__second-nav">
         <ul class="page-header__second-nav-items">
           <li class="page-header__second-nav-item">
@@ -301,11 +299,9 @@
         <ul class="second-nav__items">
           <li class="second-nav__item  second-nav__item--first">
             <a href="#">Предметы <br>интерьера</a>
-            <div class="second-nav__icon  second-nav__icon--interior"></div>
           </li>
           <li class="second-nav__item  second-nav__item--second">
             <a href="#">Детские <br>игрушки</a>
-            <div class="second-nav__icon  second-nav__icon--child"></div>
           </li>
         </ul>
       </nav>
@@ -344,30 +340,24 @@
         <div class="about-us__items">
           <div class="about-us__items-column">
             <div class="about-us__item">
-              <div class="about-us__icon  about-us__icon--eco"></div>
-              <p class="about-us__item-description">Экологически чистые материалы</p>
+              <p class="about-us__item-description  about-us__item-description--eco">Экологически чистые материалы</p>
             </div>
             <div class="about-us__item">
-              <div class="about-us__icon  about-us__icon--money"></div>
-              <p class="about-us__item-description">Скандинавский стиль по российской цене</p>
+              <p class="about-us__item-description  about-us__item-description--money">Скандинавский стиль по российской цене</p>
             </div>
             <div class="about-us__item">
-              <div class="about-us__icon  about-us__icon--like"></div>
-              <p class="about-us__item-description">Увеличивает лайки на фотографиях</p>
+              <p class="about-us__item-description  about-us__item-description--like">Увеличивает лайки на фотографиях</p>
             </div>
           </div>
           <div class="about-us__items-column">
             <div class="about-us__item">
-              <div class="about-us__icon  about-us__icon--love"></div>
-              <p class="about-us__item-description">Связано вручную с любовью и умилением</p>
+              <p class="about-us__item-description  about-us__item-description--love">Связано вручную с любовью и умилением</p>
             </div>
             <div class="about-us__item">
-              <div class="about-us__icon  about-us__icon--rocket"></div>
-              <p class="about-us__item-description">Поддержка отечественного производителя</p>
+              <p class="about-us__item-description  about-us__item-description--rocket">Поддержка отечественного производителя</p>
             </div>
             <div class="about-us__item">
-              <div class="about-us__icon  about-us__icon--gift"></div>
-              <p class="about-us__item-description">Поставляется в подарочной упаковке</p>
+              <p class="about-us__item-description  about-us__item-description--gift">Поставляется в подарочной упаковке</p>
             </div>
           </div>
         </div>
@@ -391,9 +381,9 @@
         <h3 class="contact__title">Контакты</h3>
         <div class="contacts__email">
           <span class="contacts__email-title">e-mail:</span>
-          <p class="contacts__email-data">
+          <span class="contacts__email-data">
             <a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-          </p>
+          </span>
         </div>
         <div class="contacts__adress">
           <span class="contacts__adress-title">адрес:</span>
@@ -440,7 +430,7 @@
         <section class="page-footer__copyright">
           <a href="http://htmlacademy.ru">
             <span class="page-footer__copyright-title">Разработано</span>
-            <div class="page-footer__copyright-image">
+            <div class="page-footer__copyright-image"> <!-- Использую в CSS для заливки fill иконки-->
               <svg width="27" height="35">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-htmlacademy"></use>
               </svg>
@@ -450,5 +440,6 @@
       </div>
     </footer>
     <script src="js/script.js"></script>
+    <script src="js/picturefill.js"></script>
   </body>
 </html>

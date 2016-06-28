@@ -193,9 +193,12 @@
 }
 
 .form__title--tel,
-.form__title--email,
 .form__title--other {
   padding-top: 20px;
+}
+
+.form__title--email {
+  padding-top: 25px;
 }
 
 .form__tel,
@@ -260,7 +263,7 @@
   margin-right: 30px;
   padding-left: 50px;
   padding-right: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
   background-color: #ffffff;
 }
 
@@ -286,6 +289,7 @@
   }
   
   .form__header-description {
+    margin-top: -10px;
     font-size: 16px;
     line-height: 30px;
   }
@@ -308,7 +312,7 @@
   
   .form__title {
     width: 160px;
-    margin-top: 50px;
+    margin-top: 70px;
     background: none;
   }
   
@@ -321,8 +325,8 @@
   
   .form__input-items {
     width: 100%;
-    margin-top: 20px;
-    margin-bottom: 40px;
+    margin-top: 40px;
+    margin-bottom: 50px;
   }
   
   .form__content label {
@@ -410,6 +414,8 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-top: 30px;
+    margin-bottom: 35px;
   }
   
   .form__input-color {
@@ -417,7 +423,17 @@
   }
   
   .form__title--color {
-    margin-right: 100px;
+    margin-right: 0;
+    margin-top: 55px;
+  }
+  
+  .form__title--fio {
+    margin-top: 45px;
+  }
+  
+  .form__input-items--name {
+    margin-top: 25px;
+    margin-bottom: 40px;
   }
   
   .form__input-full-name {
@@ -435,7 +451,7 @@
   }
   
   .form__email {
-    padding-bottom: 30px;
+    padding-bottom: 40px;
   }
   
   .form__input-tel {
@@ -475,6 +491,10 @@
     right: 55px;
   }
   
+  .form__title--tel {
+    margin-top: 40px;
+  }
+  
   .form__title--email {
     margin-top: 0;
   }
@@ -492,9 +512,13 @@
     margin-bottom: 40px;
   }
   
+  .form__title--other {
+    margin-top: 60px;
+  }
+  
   .form--btn {
     margin: 0;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
   }
   
   .form__btn {
@@ -513,12 +537,17 @@
     color: @body-color;
   }
   
+  .form__input-other textarea {
+    height: 110px;
+  }
+  
 }
 
 @media @desktop-widths {
   
   .form__header-description {
-    margin-left: 187px;
+    margin-top: 55px;
+    margin-left: 175px;
     margin-right: 175px;
     margin-bottom: 20px;
   }
@@ -527,6 +556,7 @@
     width: 110px;
     flex-basis: 175px;
     margin-left: 65px;
+    margin-top: 60px;
   }
   
   .form__title--fio,
@@ -536,16 +566,52 @@
     width: 90px;
   }
   
+  .form__input-items {
+    margin-top: 25px;
+    margin-left: -5px;
+  }
+  
   .form__input-color {
     width: 250px;
   }
   
   .form__title--color {
+    margin-left: 65px;
+    margin-top: 55px;
     margin-right: 80px;
+  }
+  
+  .form__title--fio {
+    margin-top: 45px;
+  }
+  
+  .form__title--tel {
+    margin-top: 40px;
+  }
+  
+  .form__title--email {
+    margin-top: -5px;
+    margin-left: 55px;
+  }
+  
+  .form__email {
+    padding-bottom: 30px;
+  }
+  
+  .form__input-email input[type=text] {
+    margin-top: 10px;
+  }
+  
+  .form__input-items--color {
+    margin-left: -85px;
   }
   
   .form__input-items--name {
     width: 700px;
+  }
+  
+  .form__input-full-name input[type=text] {
+    margin-top: 10px;
   }
   
   .form__input-tel,
@@ -560,8 +626,8 @@
   }
   
   .form__input-email::after {
-    top: 0;
-    right: 0;
+    top: 15px;
+    right: -5px;
   }
  
   .form__input-other {
@@ -570,10 +636,23 @@
   
   .form__input-other textarea {
     width: 670px;
+    margin-top: 10px;
+    margin-left: -5px;
+  }
+  
+  .form__other {
+    margin-bottom: 90px;
+  }
+  
+  .form__btn {
+    margin-bottom: 40px;
   }
   
   .form--btn {
-    margin-left: 180px;
+    width: 240px;
+    margin-left: 170px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
   
   .form__note {
