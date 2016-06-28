@@ -17,44 +17,78 @@
 .about-us__title {
   font-size: 24px;
   line-height: 30px;
-  margin-top: 35px;
-}
-
-.about-us__icon {
   margin-top: 30px;
 }
 
-.about-us__icon--eco {
+.about-us__item {
+  position: relative;
+}
+
+.about-us__item-description {
+  margin-top: 90px;
+}
+
+.about-us__item-description--like,
+.about-us__item-description--love,
+.about-us__item-description--gift {
+  margin-top: 85px;
+}
+
+.about-us__item-description--eco::before {
+  content: "";
+  position: absolute;
+  top: -55px;
+  left: 0;
   width: 32px;
   height: 37px;
   background: url(../img/icon-feature-1.svg) no-repeat;
 }
 
-.about-us__icon--money {
+.about-us__item-description--money::before {
+  content: "";
+  position: absolute;
+  top: -55px;
+  left: 0;
   width: 47px;
   height: 27px;
   background: url(../img/icon-feature-3.svg) no-repeat;
 }
 
-.about-us__icon--like {
+.about-us__item-description--like::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  left: 0;
   width: 34px;
-  height: 27px;
+  height: 28px;
   background: url(../img/icon-feature-5.svg) no-repeat;
 }
 
-.about-us__icon--love {
+.about-us__item-description--love::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  left: 0;
   width: 35px;
   height: 34px;
   background: url(../img/icon-feature-2.svg) no-repeat;
 }
 
-.about-us__icon--rocket {
+.about-us__item-description--rocket::before {
+  content: "";
+  position: absolute;
+  top: -55px;
+  left: 0;
   width: 55px;
   height: 23px;
   background: url(../img/icon-feature-4.svg) no-repeat;
 }
 
-.about-us__icon--gift {
+.about-us__item-description--gift::before {
+  content: "";
+  position: absolute;
+  top: -55px;
+  left: 0;
   width: 33px;
   height: 32px;
   background: url(../img/icon-feature-6.svg) no-repeat;
@@ -77,10 +111,6 @@
     line-height: 50px;
   }
   
-  .about-us__icon {
-    margin-top: 55px;
-  }
-  
   .about-us__item-description {
     font-size: 20px;
   }
@@ -91,7 +121,18 @@
   
   .about-us__items-column {
     float: left;
-    width: 50%;
+    width: 330px;
+  }
+  
+  .about-us__item-description {
+    margin-top: 100px;
+  }
+
+  .about-us__item-description--money,
+  .about-us__item-description--rocket,
+  .about-us__item-description--like,
+  .about-us__item-description--gift {
+    margin-top: 110px;
   }
   
 }
@@ -104,16 +145,13 @@
   }
   
   .about-us__title {
+    margin-top: 70px;
     font-size: 50px;
     line-height: 57px;
   }
   
-  .about-us__icon {
-    margin-top: 65px;
-  }
-  
   .about-us__items-column {
-    width: 330px; 
+    margin-right: 20px;
   }
   
 }

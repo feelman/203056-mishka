@@ -261,7 +261,7 @@
         </a>
       </div>
       <nav class="page-header__main-nav  main-nav  main-nav--closed  main-nav--nojs">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <button class="main-nav__toggle" type="button">Открыть меню</button> <!-- Делал по примеру ДЕМО , пруф https://up.htmlacademy.ru/adaptive/7/resources/465 -->
         <ul class="main-nav__items">
           <li class="main-nav__item">
             <a href="catalog.html">Каталог товаров</a>
@@ -281,9 +281,7 @@
           </li>
         </ul>
       </div>
-      <div class="page-header__delivery-info">
-        <span>Бесплатная доставка по России</span>
-      </div>
+      <div class="page-header__delivery-info">Бесплатная доставка по России</div>
       <nav class="page-header__second-nav">
         <ul class="page-header__second-nav-items">
           <li class="page-header__second-nav-item">
@@ -326,7 +324,7 @@
               <div class="form__color">
                 <div class="form__wrapper">
                   <div class="form__heading">
-                    <h2 class="form__title">Цвет</h2>
+                    <h2 class="form__title  form__title--color">Цвет</h2>
                   </div>
                   <div class="form__input-items  form__input-items--color">
                     <div class="form__input-color">
@@ -400,9 +398,7 @@
               </div>
               <div class="form__btn">
                 <input class="btn form--btn" type="submit" value="Отправить заказ">
-                <div class="form__note">
-                  <span>Все поля являются обязательными</span>
-                </div>
+                <div class="form__note">Все поля являются обязательными</div>
               </div>
             </div>
           </form>
@@ -444,7 +440,7 @@
         <section class="page-footer__copyright">
           <a href="http://htmlacademy.ru">
             <span class="page-footer__copyright-title">Разработано</span>
-            <div class="page-footer__copyright-image">
+            <div class="page-footer__copyright-image"> <!-- Использую в CSS для заливки fill иконки-->
               <svg width="27" height="35">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-htmlacademy"></use>
               </svg>
@@ -454,5 +450,6 @@
       </div>
     </footer>
     <script src="js/script.js"></script>
+    <script src="js/picturefill.js"></script>
   </body>
 </html>
